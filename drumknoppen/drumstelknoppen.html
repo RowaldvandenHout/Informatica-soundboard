@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <script>   
+        function snare()
+            {var music = new Audio('snare.mp3');music.play();}
+        function kick()
+            {var music = new Audio('kick.mp3');music.play();}
+        function hihat()
+            {var music = new Audio('hihat.mp3');music.play();}
+        function cymbal()
+            {var music = new Audio('cymbal.mp3');music.play();}
+        function tomhi()
+            {var music = new Audio('tomhi.mp3');music.play();}
+        function tommid()
+            {var music = new Audio('tommid.mp3');music.play();}
+        function tomlow()
+            {var music = new Audio('tomlow.mp3');music.play();}
+    </script>
+    <style>
+        .button
+            {color: #FFFFFF;
+            background-color: #5f5f5f;
+            width: 100px;
+            height:50px;
+            border: none}
+        .button:active
+            {color: #5f5f5f;
+            background-color: #acacac;}
+    </style>
+    <body>
+        <button class="button" onhover="" onclick="snare()">Snare</button>
+        <button class="button" onhover="" onclick="kick()">Kick</button>
+        <button class="button" onhover="" onclick="hihat()">Hihat</button>
+        <button class="button" onhover="" onclick="cymbal()">Cymbal</button>
+        <button class="button" onhover="" onclick="tomhi()">Tom Hi</button>
+        <button class="button" onhover="" onclick="tommid()">Tom Mid</button>
+        <button class="button" onhover="" onclick="tomlow()">Tom Low</button>
+    </body>
+</html>

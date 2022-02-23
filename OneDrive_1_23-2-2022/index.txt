@@ -1,0 +1,35 @@
+<html>
+	<head>CONTRABAS.</head>
+		<body>
+		<doctype html>
+			<style>
+				body {
+  				background-image: linear-gradient(to right, #AFEEEE , #483D8B);
+				}
+				h1 {color:#117864;}
+				h1 {border: 6px #2F4F4F;
+				    background-color: black;
+                                    padding: 50px;
+				    margin: 15px;
+				    padding-left: 150px;}
+				h3 {padding: 50px;}
+				
+			</style>
+		<title>CONTRABAS</title>
+		<h1>
+			<font face="OCR A Std" size="8">CONTRABAS</font>
+		</h1>
+		<div id="docu"></div>
+		<h3>
+			 <center>De oma van Poetin is een clown en ze heeft een kind gemaakt samen met een ezel. Daarna heeft de ezel met een rode neus en pruik die geboren werd een kind gemaakt met een lijk, en daaruit is Poetin geboren.</center>
+		</h3>
+			<img src="hele_betrouwbare_foto.jpg" alt="hele betrouwbare foto van poetin">
+			<p> zoals u hier ziet is dit onomstootbaar bewijs voor de ware identiteit van poetin</p>
+		<h3>
+			<center>Om deze reden zijn wij (de anti-poetiners) en vele anderen van mening dat het onverantwoord is om een deels ezel, deels clown en deels lijk te laten regeren over Rusland. Daarom stellen wij voor dat de kat van Jannie Hendriks de macht in handen krijgt. Op deze manier kan er een 3e wereldoorlog worden voorkomen, de enige voorwaarde is dat de kat (die Joop heet) genoeg voer krijgt. Natuurlijk wel alleen van Wiskas (het blijft toch de president).</center>
+		</h3>
+			<img src="katvanjannie.jpg" alt="kat van Jannie">
+		<p> aan deze foto kan iedereen zien dat deze kat klaar is voor de baan, iedereen die niet op hem stemt is gek! JOOP FOR PRESIDENT</p>
+	</doctype html>
+</body>
+</html>
