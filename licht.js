@@ -23,6 +23,8 @@ var correctmovespos = 0
 var truepositions = positions
 var playerturn = false // variable om aan te geven dat de speler aan de beurt is
 
+var lightsarray = Array.from(document.getElementsByClassName('lights')) 
+
 // event listener voor de muisclick
 img.addEventListener("click", (event) => {
 	if (event.button == 0) { // als het de linker muisknop betreft...
@@ -55,6 +57,7 @@ img.addEventListener("click", (event) => {
 
 window.onload = () => {
 	getTruePositions()
+	setLightPositions()
 	cpuTurn()
 	playerturn = true
 }
@@ -70,6 +73,20 @@ function getTruePositions() {
 	}
 }
 
+function setLightPositions() {
+	var i = 0;
+	lightsarray.forEach(light => {
+		light.style.left = (truepositions[i][0] + truepositions[i][1])/2 - 20 + "px"; 
+		light.style.top = (truepositions[i][2] + truepositions[i][3])/2 + 40 + "px"; 
+		console.log(light.style.left)
+		i++
+	});
+}
+
+function toggleLight(index) {
+	lightsarray[index].classList.toggle('on')
+}
+
 function cpuTurn() {
 	playerturn = false
 	console.log("cpu's turn")
@@ -83,9 +100,15 @@ function cpuTurn() {
 		console.log(correctmoves[i])
 		if (!(i < level)) {
 			clearInterval(intervalID)
+			//console.log("condition met with i = " + i)
 			playerturn = true
 		} else {
-			new Audio("sounds/" + correctmoves[i] + ".mp3").play()
+			toggleLight(correctmoves[i])
+			let a = i
+			let id = setInterval(() => {
+				toggleLight(correctmoves[a])
+				clearInterval(id)
+			},1000/2)
 			i++
 		}
 	}, 1000);
